@@ -1,5 +1,8 @@
-def square_array(array)
-  array = [1,2,3]
-  array.each do |numbers|
-    
+
+    class Array
+  def square!
+    self.map {|num| num ** 2}
+    self
+  end
 end
+    
